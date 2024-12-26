@@ -1,23 +1,14 @@
-# SSH Password-Based Authentication between Control Node and Manage Node on AWS
-
-This guide walks you through the process of setting up **password-based SSH authentication** between a **Control Node** and a **Manage Node** using **Ubuntu EC2 instances** in AWS.
+### To configure passwordless Password-based authentication between your control node and manage node in AWS using **Ubuntu-based EC2 instances**, follow these steps:
 
 ---
 
-## Prerequisites
-
-Before you begin, ensure the following:
-
-- You have access to **two EC2 instances** in AWS running **Ubuntu AMI**:
-  - **Control Node**: The local machine from which you will SSH.
-  - **Manage Node**: The remote machine you want to SSH into.
-
-- Both EC2 instances should have SSH access enabled (port 22 open) and you should have the **private key** for both instances.
+### Prerequisites:
+- You need to create **two EC2 instances** on AWS using an **Ubuntu AMI**: one will act as the **control node** and the other as the **manage node**.
+- You should have access to both EC2 instances using SSH and can log in with a password or key-based authentication.
 
 ---
 
-## Steps to Configure Password-Based SSH Authentication
-
+### Steps to Configure Password-Based SSH Authentication
 ---
 
 ### **Step 1: Create Two EC2 Instances on AWS (Control Node and Manage Node)**
